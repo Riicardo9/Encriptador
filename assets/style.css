@@ -1,0 +1,85 @@
+body{
+    background-color: #E5E5E5;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.formulario{
+    vertical-align: top;
+    padding: 40px;
+}
+
+ .entrada{
+    margin: 6px;
+    width: 50%;
+    height: 80%;
+    background-color: #E5E5E5;
+    display: inline-block;
+    text-align: center;
+    padding-left: 10%;
+ }
+
+ .salida{
+    margin: 6px;
+    width: 30%;
+    height: 80%;
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius:20px ;
+    text-align: center;
+ }
+ 
+ #txtEntrada{
+    padding: 6px;
+    margin: 6px;
+    width: 93%;
+    height: 390px;
+    background-color: #E5E5E5;
+    border: none;
+
+    font-size: 32px;
+    line-height: 150%;
+ }
+
+ #txtSalida{
+    padding: 6px;
+    margin: 6px;
+    width: 90%;
+    height: 430px;
+    background-color: white;
+    border: none;
+
+    font-size: 24px;
+    line-height: 150%;
+ }
+ .btn{
+    width: 290px;
+    height: 40px;
+    border-radius:10px ;
+    border: solid 1px #0A3871;
+    margin: 6px;
+ }
+
+ .btnEncriptar{
+    background-color: #0A3871;
+    color: aliceblue;
+ }
+
+ .btnDesencriptar, .btnCopiar{
+    background-color: #E5E5E5;
+    color: #0A3871;
+ }
+
+ p{
+    
+    line-height: 150%;
+    color: #0A3871;
+    text-align: left;
+    padding-left: 6%;
+ }
+
+ img{
+    padding: 20% 0 20% 0;
+    width: 90%;
+ }
