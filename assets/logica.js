@@ -6,6 +6,9 @@ const btnDesencriptar = document.getElementById('btnDesencriptar');
 btnEncriptar.addEventListener('click', (e) =>{
     if(txtEntrada.value != ''){
 
+        //(/^[a-z]*$/.test(txtEntrada.value))
+
+
         document.getElementById('sinMensaje').style.display = "none";
         txtSalida.style.display = "block";
 
@@ -24,10 +27,12 @@ btnEncriptar.addEventListener('click', (e) =>{
                     break;
             }
         }
-        txtSalida.innerText = arr.join('')
-        txtEntrada.innerText = '';
 
-    } else{
+        txtEntrada.value = '';
+        txtSalida.innerText = arr.join('')
+        
+
+    } else {
 
         document.getElementById('sinMensaje').style.display = "block";
         txtSalida.style.display = "none";         
@@ -42,12 +47,7 @@ function desencriptar(){
 }
 
 function copyToClipBoard(txtSalida) {
-    //copia de textarea
     txtSalida = document.getElementById('txtSalida');
     txtSalida.select();
     document.execCommand('copy'); 
-}
-
-function borrar(){
-    txtSalida.value = '';
 }
