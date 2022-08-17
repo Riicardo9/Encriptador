@@ -4,10 +4,7 @@ const btnEncriptar = document.getElementById('btnEncriptar');
 const btnDesencriptar = document.getElementById('btnDesencriptar');
 
 btnEncriptar.addEventListener('click', (e) =>{
-    if(txtEntrada.value != ''){
-
-        //(/^[a-z]*$/.test(txtEntrada.value))
-
+    if(txtEntrada.value != '' && (/^[a-z]*$/.test(txtEntrada.value))){
 
         document.getElementById('sinMensaje').style.display = "none";
         txtSalida.style.display = "block";
